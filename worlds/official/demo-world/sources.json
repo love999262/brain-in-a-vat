@@ -1,0 +1,38 @@
+[
+  {
+    "bindingId": "source-entertainment",
+    "sourcePackId": "official/entertainment-feed",
+    "enabled": true,
+    "deliverTo": ["char-mao"],
+    "sharedChannels": ["main-group"],
+    "priorityMode": "boosted",
+    "characterOverrides": {
+      "char-jin": {
+        "priorityBoost": -0.2
+      }
+    }
+  },
+  {
+    "bindingId": "source-history-tech",
+    "sourcePackId": "official/history-tech-feed",
+    "enabled": true,
+    "deliverTo": ["char-jin"],
+    "sharedChannels": [],
+    "priorityMode": "boosted",
+    "characterOverrides": {
+      "char-mao": {
+        "priorityBoost": -0.15
+      }
+    }
+  },
+  {
+    "bindingId": "source-world",
+    "sourcePackId": "official/world-briefing",
+    "enabled": true,
+    "deliverTo": ["char-hiyori", "char-jin"],
+    "sharedChannels": ["main-group"],
+    "priorityMode": "normal",
+    "characterOverrides": {}
+  }
+]
+

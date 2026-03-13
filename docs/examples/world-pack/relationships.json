@@ -1,7 +1,7 @@
 [
   {
-    "from": "char-22",
-    "to": "char-33",
+    "from": "char-mao",
+    "to": "char-hiyori",
     "dimensions": {
       "familiarity": 0.78,
       "trust": 0.62,
@@ -13,8 +13,8 @@
     "notes": "关系亲近但经常出现表达层面的分歧"
   },
   {
-    "from": "char-33",
-    "to": "char-22",
+    "from": "char-hiyori",
+    "to": "char-mao",
     "dimensions": {
       "familiarity": 0.79,
       "trust": 0.59,
@@ -23,6 +23,19 @@
       "curiosity": 0.71,
       "influence": 0.42
     },
-    "notes": "会吐槽，但并不排斥对方"
+    "notes": "会保持稳定节奏，但并不排斥对方"
+  },
+  {
+    "from": "char-jin",
+    "to": "char-mao",
+    "dimensions": {
+      "familiarity": 0.42,
+      "trust": 0.38,
+      "warmth": 0.3,
+      "tension": 0.34,
+      "curiosity": 0.68,
+      "influence": 0.46
+    },
+    "notes": "被舞台型表达吸引，但会保持分析距离"
   }
 ]

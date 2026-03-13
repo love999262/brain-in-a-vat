@@ -1,7 +1,7 @@
 {
   "preferredSourceIds": [
     "official/entertainment-feed",
-    "official/general-feed"
+    "official/world-briefing"
   ],
   "blockedSourceIds": [],
   "preferredTags": {

@@ -1,0 +1,48 @@
+[
+  {
+    "instanceId": "char-mao",
+    "characterPackId": "official/niziiro-mao",
+    "enabled": true,
+    "visibleAtStart": true,
+    "focusPriority": 0.92,
+    "initialState": {
+      "mood": "bright",
+      "energy": 0.84
+    },
+    "contextOverlay": {
+      "worldRole": "舞台型扰动源"
+    },
+    "tags": ["entertainment", "visual"]
+  },
+  {
+    "instanceId": "char-hiyori",
+    "characterPackId": "official/hiyori-momose",
+    "enabled": true,
+    "visibleAtStart": true,
+    "focusPriority": 0.78,
+    "initialState": {
+      "mood": "calm",
+      "energy": 0.68
+    },
+    "contextOverlay": {
+      "worldRole": "场景稳定器"
+    },
+    "tags": ["anchor", "general"]
+  },
+  {
+    "instanceId": "char-jin",
+    "characterPackId": "official/jin-natori",
+    "enabled": true,
+    "visibleAtStart": false,
+    "focusPriority": 0.62,
+    "initialState": {
+      "mood": "curious",
+      "energy": 0.62
+    },
+    "contextOverlay": {
+      "worldRole": "结构化观察者"
+    },
+    "tags": ["analysis", "technology"]
+  }
+]
+

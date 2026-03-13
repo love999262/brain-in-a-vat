@@ -1,0 +1,31 @@
+{
+  "id": "official/hiyori-momose",
+  "kind": "character",
+  "name": "Hiyori Momose",
+  "title": "稳定型标准角色",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "tags": ["official", "sample", "live2d"],
+  "files": {
+    "persona": "persona.json",
+    "memoryProfile": "memory-profile.json",
+    "renderManifest": "render.manifest.json",
+    "sourceAffinity": "source-affinity.json",
+    "relationshipProfile": "relationship-profile.json"
+  },
+  "capabilities": {
+    "chat": true,
+    "live2d": true,
+    "groupConversation": true
+  },
+  "defaults": {
+    "initialMood": "calm",
+    "initialEnergy": 0.68,
+    "visibleAtBootstrap": true
+  }
+}
+

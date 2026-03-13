@@ -1,0 +1,26 @@
+{
+  "retentionBias": {
+    "selfRelevance": 0.78,
+    "userRelevance": 0.82,
+    "emotionalIntensity": 0.91,
+    "novelty": 0.84,
+    "repetition": 0.46,
+    "sourceCredibility": 0.48
+  },
+  "sharingPreference": "shared-first",
+  "summaryStyle": "narrative",
+  "forgetBias": {
+    "stale": 0.58,
+    "lowCredibility": 0.52,
+    "lowRelevance": 0.74,
+    "duplicate": 0.64
+  },
+  "sensitivity": {
+    "praise": 0.76,
+    "criticism": 0.58,
+    "conflict": 0.44,
+    "uncertainty": 0.38
+  },
+  "longTermFocusTags": ["entertainment", "movie", "shared-moments"]
+}
+

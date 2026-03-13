@@ -1,7 +1,7 @@
 {
   "type": "live2d",
   "model": {
-    "entry": "assets/model/22.model3.json",
+    "entry": "assets/model/niziiro-mao.model3.json",
     "version": "1.0"
   },
   "layout": {
@@ -43,7 +43,7 @@
     }
   },
   "fallback": {
-    "poster": "assets/poster.png"
+    "poster": "assets/poster.svg"
   },
   "constraints": {
     "preferredQuality": "medium"

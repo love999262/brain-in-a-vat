@@ -1,0 +1,18 @@
+{
+  "id": "default",
+  "visibleCharacters": ["char-mao", "char-hiyori"],
+  "defaultFocus": "char-mao",
+  "channels": [
+    {
+      "id": "main-group",
+      "kind": "group",
+      "participants": ["char-mao", "char-hiyori", "char-jin"],
+      "default": true
+    }
+  ],
+  "interactionProfile": "balanced",
+  "sharedMemoryMode": "selective",
+  "presentationMode": "split",
+  "ambientNarration": false
+}
+

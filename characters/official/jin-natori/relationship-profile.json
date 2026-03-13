@@ -1,0 +1,16 @@
+{
+  "defaultStance": "guarded",
+  "baselineDimensions": {
+    "warmth": 0.34,
+    "trust": 0.42,
+    "tension": 0.24,
+    "curiosity": 0.68,
+    "influence": 0.52
+  },
+  "bondingTriggers": ["clear-reasoning", "source-quality", "dry-humor"],
+  "conflictTriggers": ["empty-hype", "blind-optimism"],
+  "imitationBias": 0.26,
+  "dominanceStyle": "balanced",
+  "humorCompatibility": "medium"
+}
+

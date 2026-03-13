@@ -1,0 +1,20 @@
+{
+  "preferredSourceIds": ["official/world-briefing", "official/history-tech-feed"],
+  "blockedSourceIds": [],
+  "preferredTags": {
+    "culture": 0.74,
+    "world": 0.66,
+    "society": 0.62
+  },
+  "blockedTags": [],
+  "categoryWeights": {
+    "general": 0.78,
+    "history-tech": 0.58,
+    "entertainment": 0.42
+  },
+  "credibilitySensitivity": 0.66,
+  "noveltyPreference": 0.52,
+  "engagementStyle": "selective",
+  "conflictTriggers": ["rumor", "unverified"]
+}
+

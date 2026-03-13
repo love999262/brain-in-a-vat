@@ -1,0 +1,11 @@
+{
+  "audienceTags": ["entertainment", "official"],
+  "deliveryMode": "shared",
+  "priorityBoosts": {
+    "movie": 0.3,
+    "game": 0.3
+  },
+  "topicHints": ["movie", "game", "culture"],
+  "defaultChannels": ["main-group"]
+}
+

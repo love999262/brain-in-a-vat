@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite/
+coverage/
+*.log
+*.tmp
+live2d-links.txt
+live2d-sample-page.html
+

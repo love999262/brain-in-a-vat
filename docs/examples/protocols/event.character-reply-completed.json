@@ -3,10 +3,10 @@
   "eventId": "evt_0001",
   "timestamp": "2026-03-14T01:00:00Z",
   "payload": {
-    "characterId": "char-22",
+    "characterId": "char-mao",
     "channelId": "main-group",
     "messageId": "msg_1001",
-    "text": "我今天想聊电影和新游戏！"
+    "text": "我今天想聊舞台表现、电影和新鲜话题！"
   },
   "meta": {
     "requestId": "req_0001"

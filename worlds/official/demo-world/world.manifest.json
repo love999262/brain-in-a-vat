@@ -1,0 +1,22 @@
+{
+  "id": "official/demo-world",
+  "kind": "world",
+  "name": "官方演示世界",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "locale": "zh-CN",
+  "defaultLanguage": "zh-CN",
+  "startup": {
+    "autoStart": true,
+    "restorePreviousState": true,
+    "entryScene": "default"
+  },
+  "presentation": {
+    "defaultTheme": "official-demo"
+  }
+}
+

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ent-001",
+    "title": "一部高口碑科幻片突然逆袭",
+    "summary": "本周讨论度最高的话题是视觉风格与情绪表达如何同时成立。",
+    "tags": ["movie", "culture"],
+    "category": "entertainment",
+    "credibility": 0.74
+  },
+  {
+    "id": "ent-002",
+    "title": "一款新作因叙事节奏引发争论",
+    "summary": "玩家一边夸设定完整，一边吐槽前期铺垫过长。",
+    "tags": ["game"],
+    "category": "entertainment",
+    "credibility": 0.7
+  }
+]
+

@@ -1,0 +1,33 @@
+{
+  "id": "official/world-briefing",
+  "kind": "source",
+  "name": "世界简报源",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "sourceType": "rss",
+  "endpoints": [
+    {
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "format": "rss",
+      "priority": 1
+    }
+  ],
+  "access": {
+    "mode": "requires-bridge"
+  },
+  "contentClass": "realtime",
+  "category": "general",
+  "language": "zh-CN",
+  "credibility": 0.8,
+  "tags": ["world", "society", "news"],
+  "extensions": {
+    "fallbackItemsFile": "assets/fallback-items.json"
+  },
+  "terms": {
+    "note": "浏览器演示默认使用本地回退快照；如需实时抓取，后续可通过 bridge 或 serverless 代理增强。"
+  }
+}

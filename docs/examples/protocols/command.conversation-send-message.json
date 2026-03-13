@@ -4,8 +4,8 @@
   "payload": {
     "channelId": "main-group",
     "targetCharacterIds": [
-      "char-22",
-      "char-33"
+      "char-mao",
+      "char-hiyori"
     ],
     "message": "你们两个今天分别想聊什么？"
   },

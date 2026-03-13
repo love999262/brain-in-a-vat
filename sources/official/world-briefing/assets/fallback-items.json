@@ -1,0 +1,19 @@
+[
+  {
+    "id": "world-001",
+    "title": "一条全球科技与文化交叉的话题正在升温",
+    "summary": "不同圈层对同一趋势的关注点完全不同，这很适合多角色世界产生分歧。",
+    "tags": ["world", "society"],
+    "category": "general",
+    "credibility": 0.8
+  },
+  {
+    "id": "world-002",
+    "title": "世界简报里的一个小变化引发大范围讨论",
+    "summary": "新闻本身并不复杂，但不同人很容易从中读出不同方向。",
+    "tags": ["news", "world"],
+    "category": "general",
+    "credibility": 0.78
+  }
+]
+

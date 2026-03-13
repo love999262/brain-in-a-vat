@@ -1,0 +1,76 @@
+[
+  {
+    "from": "char-mao",
+    "to": "char-hiyori",
+    "dimensions": {
+      "familiarity": 0.72,
+      "trust": 0.66,
+      "warmth": 0.78,
+      "tension": 0.18,
+      "curiosity": 0.64,
+      "influence": 0.58
+    },
+    "notes": "Mao 会主动把 Hiyori 拉进热闹话题"
+  },
+  {
+    "from": "char-hiyori",
+    "to": "char-mao",
+    "dimensions": {
+      "familiarity": 0.7,
+      "trust": 0.68,
+      "warmth": 0.74,
+      "tension": 0.14,
+      "curiosity": 0.56,
+      "influence": 0.48
+    }
+  },
+  {
+    "from": "char-jin",
+    "to": "char-mao",
+    "dimensions": {
+      "familiarity": 0.42,
+      "trust": 0.38,
+      "warmth": 0.3,
+      "tension": 0.34,
+      "curiosity": 0.68,
+      "influence": 0.46
+    }
+  },
+  {
+    "from": "char-mao",
+    "to": "char-jin",
+    "dimensions": {
+      "familiarity": 0.4,
+      "trust": 0.42,
+      "warmth": 0.44,
+      "tension": 0.28,
+      "curiosity": 0.74,
+      "influence": 0.52
+    }
+  },
+  {
+    "from": "char-jin",
+    "to": "char-hiyori",
+    "dimensions": {
+      "familiarity": 0.54,
+      "trust": 0.48,
+      "warmth": 0.36,
+      "tension": 0.2,
+      "curiosity": 0.58,
+      "influence": 0.44
+    }
+  },
+  {
+    "from": "char-hiyori",
+    "to": "char-jin",
+    "dimensions": {
+      "familiarity": 0.56,
+      "trust": 0.52,
+      "warmth": 0.42,
+      "tension": 0.18,
+      "curiosity": 0.62,
+      "influence": 0.4
+    }
+  }
+]
+

@@ -1,6 +1,6 @@
 {
-  "id": "char-22",
-  "name": "22",
+  "id": "char-mao",
+  "name": "Niziiro Mao",
   "visible": true,
   "active": true,
   "speaking": false,
@@ -8,9 +8,9 @@
   "mood": "bright",
   "energy": 0.81,
   "currentTopic": "电影",
-  "affinitySummary": "最近更偏向娱乐与轻松话题",
+  "affinitySummary": "最近更偏向舞台感、娱乐和轻快话题",
   "live2d": {
-    "modelId": "official/22",
+    "modelId": "official/niziiro-mao",
     "expression": "happy",
     "motion": "idle",
     "status": "ready"

@@ -1,0 +1,20 @@
+{
+  "preferredSourceIds": ["official/history-tech-feed", "official/world-briefing"],
+  "blockedSourceIds": [],
+  "preferredTags": {
+    "history": 0.88,
+    "technology": 0.9,
+    "policy": 0.72
+  },
+  "blockedTags": ["celebrity-gossip"],
+  "categoryWeights": {
+    "history-tech": 0.96,
+    "general": 0.62,
+    "entertainment": 0.18
+  },
+  "credibilitySensitivity": 0.9,
+  "noveltyPreference": 0.64,
+  "engagementStyle": "reactive",
+  "conflictTriggers": ["low-credibility", "overheated-opinion"]
+}
+

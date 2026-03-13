@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d6d6e8"/>
+      <stop offset="100%" stop-color="#7f88b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <circle cx="300" cy="260" r="120" fill="#f3f4ff" opacity="0.85"/>
+  <rect x="140" y="420" width="320" height="260" rx="36" fill="#ffffff" opacity="0.78"/>
+  <text x="300" y="510" text-anchor="middle" font-size="42" font-family="Georgia, serif" fill="#29305d">Jin Natori</text>
+  <text x="300" y="570" text-anchor="middle" font-size="24" font-family="Georgia, serif" fill="#323b6f">Official Sample Fallback</text>
+  <text x="300" y="640" text-anchor="middle" font-size="20" font-family="Georgia, serif" fill="#323b6f">观察型 · 结构感 · 冷静锋利</text>
+</svg>

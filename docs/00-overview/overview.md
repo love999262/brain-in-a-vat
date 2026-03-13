@@ -50,7 +50,7 @@
 
 项目由四层组成：
 
-- `Headless Engine`
+- 无界面引擎 `Headless Engine`
   - 负责世界生命周期、角色状态、记忆、关系、调度、信息流和公开 API
 - `Web Components`
   - 第一层公开 UI 入口，只接收引擎输出的 ViewModel
@@ -101,15 +101,18 @@
     /web-components
     /shared
   /worlds
-    /official-demo
+    /official
+      /demo-world
   /characters
-    /official-22
-    /official-33
-    /official-third
+    /official
+      /niziiro-mao
+      /hiyori-momose
+      /jin-natori
   /sources
-    /official-entertainment
-    /official-history-tech
-    /official-general
+    /official
+      /entertainment-feed
+      /history-tech-feed
+      /world-briefing
   /docs
   /scripts
   /tooling
@@ -504,8 +507,8 @@ V1 只公开一个组件：
 
 支持两种接入方式：
 
-- receive an existing `engine instance`
-- receive an `initConfig` and create an engine internally
+- 接收一个已经创建好的 `engine instance`
+- 接收一份 `initConfig` 并在组件内部创建引擎
 
 它不定义第二套业务协议，只消费引擎已有公开能力。
 
@@ -527,9 +530,9 @@ V1 只公开一个组件：
 
 记忆分三层：
 
-- short-term memory
-- episodic memory
-- long-term memory
+- 短期记忆
+- 情节记忆
+- 长期记忆
 
 要求：
 
@@ -562,17 +565,17 @@ V1 固定六个维度：
 
 引擎通过一条统一管线消费信息：
 
-1. fetch
-2. parse
-3. normalize
-4. deduplicate
-5. filter
-6. sanitize
-7. classify and tag
-8. route
-9. summarize
-10. write to memory
-11. trigger interaction
+1. 获取
+2. 解析
+3. 规范化
+4. 去重
+5. 过滤
+6. 安全清洗
+7. 分类与打标签
+8. 路由
+9. 摘要
+10. 写入记忆
+11. 触发互动
 
 这条管线属于引擎和 Provider，不属于 Pack。
 
@@ -581,9 +584,9 @@ V1 固定六个维度：
 默认分层如下：
 
 - `Service Worker + Cache Storage`
-  - static assets, Live2D resources, raw source responses
+  - 静态资源、Live2D 资源、消息源原始响应
 - `IndexedDB`
-  - world state, memory, relationships, event logs, source cursors
+  - 世界状态、记忆、关系、事件日志、消息源游标
 - `OPFS` 或等价的大文件层
   - 模型文件缓存
 
@@ -593,11 +596,11 @@ V1 固定六个维度：
 
 `browser-runtime` 负责：
 
-- WebGPU capability detection
-- visibility and lifecycle handling
-- worker coordination
-- service worker coordination
-- multi-tab leadership
+- WebGPU 能力探测
+- 页面可见性与生命周期处理
+- Worker 协调
+- Service Worker 协调
+- 多标签页主实例选举
 - 能力等级上报
 
 它解决运行环境约束，不负责世界行为。
@@ -606,10 +609,10 @@ V1 固定六个维度：
 
 能力分级决定：
 
-- model tier
-- number of visible characters
-- number of active characters
-- animation fidelity
+- 模型档位
+- 可视角色数量
+- 激活角色数量
+- 动画精度
 - 后台自动演化强度
 
 设备能力会影响运行方式，但不会反向影响 Pack 结构。
@@ -633,9 +636,9 @@ V1 只要求架构上不把后续移动端支持的路堵死。
 
 但架构上仍需为以下事项保留空间：
 
-- asset path resolution
-- provider replacement
-- host bridge integration
+- 资源路径解析
+- Provider 替换
+- Host Bridge 接入
 - 生命周期适配
 
 ## Serverless 策略
@@ -644,15 +647,15 @@ V1 只要求架构上不把后续移动端支持的路堵死。
 
 未来可以承担：
 
-- feed proxying
-- sync
-- backup
+- 消息源代理
+- 同步
+- 备份
 - 预处理
 
 未来不能承担：
 
-- sole world state authority
-- sole character reasoning authority
+- 世界状态的唯一真相源
+- 角色主推理的唯一真相源
 - 唯一记忆真相源
 
 ## 安全边界
@@ -675,28 +678,28 @@ V1 只要求架构上不把后续移动端支持的路堵死。
 
 目标是验证：
 
-- three-character relationship dynamics
-- memory flow
-- source routing
-- shared world behavior
+- 三角色关系张力
+- 记忆流转
+- 消息源分流
+- 共享世界行为
 - 引擎和 UI 的分离
 
 ## 开发顺序
 
 推荐实现顺序如下：
 
-1. workspace and tooling
-2. schema and pack infrastructure
-3. public protocol skeleton
-4. engine minimum loop
-5. memory system
-6. relationship and interaction scheduling
-7. provider interfaces
-8. concrete providers
-9. browser runtime
-10. Live2D renderer
+1. Workspace 和工具链
+2. Schema 与 Pack 基建
+3. 公开协议骨架
+4. 引擎最小闭环
+5. 记忆系统
+6. 关系与互动调度
+7. Provider 接口
+8. Provider 实现
+9. 浏览器运行时
+10. Live2D 渲染层
 11. Web Components
-12. standalone shell
+12. Standalone 壳层
 13. 调试与观测
 14. 测试体系
 15. 发布准备
@@ -746,6 +749,6 @@ V1 至少要满足以下条件：
 
 ## 结论
 
-`Brain-in-a-Vat Engine` 应按“配置驱动的 Headless Engine + 最小稳定 UI 协议 + 单一官方壳 + 多包 monorepo”的方向推进。
+`Brain-in-a-Vat Engine` 应按“配置驱动的无界面引擎 + 最小稳定 UI 协议 + 单一官方壳 + 多包 monorepo”的方向推进。
 
 顺序很重要：先定义协议、边界和内容结构，再在其上实现运行时、渲染层和应用壳。

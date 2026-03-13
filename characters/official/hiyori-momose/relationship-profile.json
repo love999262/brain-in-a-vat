@@ -1,0 +1,16 @@
+{
+  "defaultStance": "neutral",
+  "baselineDimensions": {
+    "warmth": 0.62,
+    "trust": 0.56,
+    "tension": 0.14,
+    "curiosity": 0.58,
+    "influence": 0.44
+  },
+  "bondingTriggers": ["mutual-respect", "steady-conversation", "gentle-humor"],
+  "conflictTriggers": ["reckless-overreach", "noise-without-substance"],
+  "imitationBias": 0.48,
+  "dominanceStyle": "balanced",
+  "humorCompatibility": "medium"
+}
+

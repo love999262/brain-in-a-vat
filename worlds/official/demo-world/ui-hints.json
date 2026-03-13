@@ -1,0 +1,6 @@
+{
+  "layoutHint": "stage-split",
+  "defaultPanels": ["characters", "relationships", "resources"],
+  "themeHint": "official-demo",
+  "heroCharacter": "char-mao"
+}

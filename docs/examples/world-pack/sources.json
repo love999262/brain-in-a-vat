@@ -4,14 +4,14 @@
     "sourcePackId": "official/entertainment-feed",
     "enabled": true,
     "deliverTo": [
-      "char-22"
+      "char-mao"
     ],
     "sharedChannels": [
       "world/ambient"
     ],
     "priorityMode": "boosted",
     "characterOverrides": {
-      "char-33": {
+      "char-jin": {
         "priorityBoost": -0.1
       }
     }
@@ -21,14 +21,14 @@
     "sourcePackId": "official/history-tech-feed",
     "enabled": true,
     "deliverTo": [
-      "char-33"
+      "char-jin"
     ],
     "sharedChannels": [
       "world/ambient"
     ],
     "priorityMode": "normal",
     "characterOverrides": {
-      "char-22": {
+      "char-mao": {
         "blocked": false,
         "priorityBoost": -0.2
       }
@@ -36,7 +36,7 @@
   },
   {
     "bindingId": "src-general",
-    "sourcePackId": "official/general-feed",
+    "sourcePackId": "official/world-briefing",
     "enabled": true,
     "deliverTo": [],
     "sharedChannels": [

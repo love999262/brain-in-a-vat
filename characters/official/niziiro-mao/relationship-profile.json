@@ -1,0 +1,16 @@
+{
+  "defaultStance": "friendly",
+  "baselineDimensions": {
+    "warmth": 0.7,
+    "trust": 0.56,
+    "tension": 0.18,
+    "curiosity": 0.78,
+    "influence": 0.58
+  },
+  "bondingTriggers": ["shared-fun", "visual-expression", "active-feedback"],
+  "conflictTriggers": ["cold-response", "over-analysis"],
+  "imitationBias": 0.56,
+  "dominanceStyle": "leading",
+  "humorCompatibility": "high"
+}
+

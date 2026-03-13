@@ -1,0 +1,11 @@
+{
+  "audienceTags": ["world", "official"],
+  "deliveryMode": "broadcast",
+  "priorityBoosts": {
+    "world": 0.22,
+    "society": 0.18
+  },
+  "topicHints": ["world", "society", "news"],
+  "defaultChannels": ["main-group"]
+}
+

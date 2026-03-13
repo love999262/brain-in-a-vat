@@ -1,0 +1,31 @@
+{
+  "id": "official/jin-natori",
+  "kind": "character",
+  "name": "Jin Natori",
+  "title": "差异化动作型角色",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "tags": ["official", "sample", "live2d"],
+  "files": {
+    "persona": "persona.json",
+    "memoryProfile": "memory-profile.json",
+    "renderManifest": "render.manifest.json",
+    "sourceAffinity": "source-affinity.json",
+    "relationshipProfile": "relationship-profile.json"
+  },
+  "capabilities": {
+    "chat": true,
+    "live2d": true,
+    "groupConversation": true
+  },
+  "defaults": {
+    "initialMood": "curious",
+    "initialEnergy": 0.64,
+    "visibleAtBootstrap": false
+  }
+}
+

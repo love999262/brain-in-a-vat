@@ -1,0 +1,19 @@
+[
+  {
+    "id": "hist-001",
+    "title": "一项新 AI 基准让模型推理方式再次被审视",
+    "summary": "研究者发现，在资源受限条件下，小模型与调度策略的组合仍有明显空间。",
+    "tags": ["technology", "policy"],
+    "category": "history-tech",
+    "credibility": 0.86
+  },
+  {
+    "id": "hist-002",
+    "title": "一段被忽略的技术史重新进入讨论",
+    "summary": "不少人开始把今天的产品争议放回更长时间尺度里看。",
+    "tags": ["history"],
+    "category": "history-tech",
+    "credibility": 0.82
+  }
+]
+

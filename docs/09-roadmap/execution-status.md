@@ -4,9 +4,9 @@
 
 ## 1. 当前状态概览
 
-- 项目阶段：`架构冻结完成，进入工程启动阶段`
-- 当前主线：`Phase 0：仓库底座`
-- 当前目标：完成 monorepo 骨架、文档入口、Schema 与协议实现的工程起点
+- 项目阶段：`V1 演示基线已完成，进入下一轮补强阶段`
+- 当前主线：`Phase 9：Live2D 渲染层` 与 `Phase 12：调试与观测`
+- 当前目标：补齐真实官方 Live2D 资源、事件流与记忆日志面板，并继续收敛发布面
 - V1 范围：`1 个官方壳 + 1 个公开组件 + 1 个世界 + 3 个角色 + 3 个消息源`
 
 ## 2. 已冻结的 V1 决策
@@ -37,130 +37,144 @@
 - `DONE` 已定义“开发前必读文档”和“完成后必须更新状态文档”的规则
 - `DONE` 已建立执行状态文档，作为唯一进度真相
 
+### 工程底座与内容包
+
+- `DONE` 已建立 `pnpm workspace` 与 monorepo 基础骨架
+- `DONE` 已建立 `apps / packages / worlds / characters / sources / tooling` 目录结构
+- `DONE` 已建立根 `package.json`、`pnpm-workspace.yaml`、TypeScript 共享配置和 ESLint 配置
+- `DONE` 已建立核心 package 的入口与导出面
+- `DONE` 已落地官方世界包 `official/demo-world`
+- `DONE` 已落地三个官方角色包：`official/niziiro-mao`、`official/hiyori-momose`、`official/jin-natori`
+- `DONE` 已落地三个官方消息源包：`official/entertainment-feed`、`official/history-tech-feed`、`official/world-briefing`
+
+### Schema、协议与引擎
+
+- `DONE` 已实现 `packages/config-schema`
+- `DONE` 已实现三类 Pack schema、结构化错误码、Pack 加载器与路径解析器
+- `DONE` 已实现 `InitConfig`、`EngineHandle`、`Command`、`Event`、`ViewModel`、错误模型与生命周期状态
+- `DONE` 已实现世界加载、角色实例化、消息源绑定解析、初始关系图构建、场景初始化和事件总线
+- `DONE` 已实现用户输入 -> 角色回复 -> 记忆更新 -> 关系变化 -> ViewModel 更新的最小闭环
+- `DONE` 已实现短期记忆、情节记忆入口、长期记忆占位与审计字段
+
+### Provider、运行时、UI 与官方壳
+
+- `DONE` 已实现 `provider-indexeddb`
+- `DONE` 已实现 `provider-rss`，并支持浏览器模式下的本地回退快照
+- `DONE` 已实现 `provider-webllm`，并支持能力不足时自动降级
+- `DONE` 已实现 `browser-runtime` 的能力探测、页面可见性处理和多标签页主实例逻辑
+- `DONE` 已实现 `renderer-live2d` 的真实接入路径和静态降级路径
+- `DONE` 已实现唯一公开组件 `<brain-vat-world>`
+- `DONE` 已实现 `apps/standalone` 官方壳，并接入导入导出、关系摘要、资源状态与对话区
+
+### 验证
+
+- `DONE` 已通过 `corepack pnpm typecheck`
+- `DONE` 已通过 `corepack pnpm test`
+- `DONE` 已通过 `corepack pnpm build`
+- `DONE` 已验证官方页面可启动、可加载世界、可展示 3 个角色并可发送消息
+
 ## 4. 当前进行中
 
-- `TODO` 当前尚未开始代码开发，下一步进入 `Phase 0：仓库底座`
+- `IN_PROGRESS` 官方演示基线已经稳定，下一步优先补齐真实 Live2D 资产和观测面板
 
 ## 5. 下一步优先任务
 
-### Phase 0：仓库底座
+### 下一阶段优先项
 
-- `TODO` 建立 `pnpm workspace` 基础配置
-- `TODO` 建立 `apps / packages / worlds / characters / sources / tooling` 目录骨架
-- `TODO` 建立根 `package.json`
-- `TODO` 建立 `pnpm-workspace.yaml`
-- `TODO` 建立 TypeScript 共享配置
-- `TODO` 建立 lint / format / test 基础配置
-- `TODO` 建立 package 导出规范
-
-### Phase 1：Schema 与 Pack 基建
-
-- `TODO` 建立 `packages/config-schema`
-- `TODO` 定义通用 manifest schema
-- `TODO` 定义 `character` schema
-- `TODO` 定义 `source` schema
-- `TODO` 定义 `world` schema
-- `TODO` 定义结构化错误码
-- `TODO` 建立 pack 加载器和路径解析器
-- `TODO` 建立官方样例 world/character/source 目录骨架
-
-### Phase 2：公开协议骨架
-
-- `TODO` 定义 `InitConfig`
-- `TODO` 定义 `EngineHandle`
-- `TODO` 定义 `Command` 协议
-- `TODO` 定义 `Event` 协议
-- `TODO` 定义 `ViewModel` 协议
-- `TODO` 定义错误模型与生命周期状态
+- `TODO` 将真实 Live2D 官方 Sample Data 资源补齐到当前三角色目录
+- `TODO` 为 `renderer-live2d` 接通真实模型资源后的动作与表情映射验证
+- `TODO` 扩充事件流面板与记忆日志面板
+- `TODO` 补齐 Web Component smoke tests
+- `TODO` 完善发布前文档与最小接入示例
 
 ## 6. 后续阶段任务总览
 
 ### Phase 3：Engine Core 最小闭环
 
-- `TODO` 世界加载流程
-- `TODO` 角色实例化
-- `TODO` 场景初始化
-- `TODO` 初始关系图构建
-- `TODO` 事件总线
-- `TODO` 命令分发器
-- `TODO` 基础 ViewModel 输出
+- `DONE` 世界加载流程
+- `DONE` 角色实例化
+- `DONE` 场景初始化
+- `DONE` 初始关系图构建
+- `DONE` 事件总线
+- `DONE` 命令分发器
+- `DONE` 基础 ViewModel 输出
 
 ### Phase 4：记忆系统
 
-- `TODO` 短期记忆
-- `TODO` 情节记忆
-- `TODO` 长期记忆
-- `TODO` 记忆写入入口
-- `TODO` 摘要占位管线
-- `TODO` 审计与遗忘能力
+- `DONE` 短期记忆
+- `DONE` 情节记忆
+- `IN_PROGRESS` 长期记忆占位实现
+- `DONE` 记忆写入入口
+- `IN_PROGRESS` 摘要占位管线
+- `DONE` 审计与遗忘能力
 
 ### Phase 5：关系与互动调度
 
-- `TODO` 关系维度更新规则
-- `TODO` 三角色互动调度器
-- `TODO` 用户输入触发互动
-- `TODO` 消息源摄取触发互动
-- `TODO` 关系变化事件
+- `DONE` 关系维度更新规则
+- `DONE` 三角色互动调度器（最小可用版）
+- `DONE` 用户输入触发互动
+- `DONE` 消息源摄取触发互动
+- `DONE` 关系变化事件
 
 ### Phase 6：Provider 接口层
 
-- `TODO` `ModelProvider`
-- `TODO` `StorageProvider`
-- `TODO` `SourceProvider`
-- `TODO` `AssetProvider`
-- `TODO` `ServerlessBridge` 预留接口
+- `DONE` `ModelProvider`
+- `DONE` `StorageProvider`
+- `DONE` `SourceProvider`
+- `DONE` `AssetProvider`
+- `DONE` `ServerlessBridge` 预留接口
 
 ### Phase 7：真实 Provider 实现
 
-- `TODO` `provider-indexeddb`
-- `TODO` `provider-rss`
-- `TODO` `provider-webllm`
+- `DONE` `provider-indexeddb`
+- `DONE` `provider-rss`
+- `DONE` `provider-webllm`
 
 ### Phase 8：Browser Runtime
 
-- `TODO` WebGPU 能力探测
-- `TODO` 运行等级系统
-- `TODO` 页面可见性控制
-- `TODO` 多标签页主实例选举
-- `TODO` 生命周期暂停恢复
+- `DONE` WebGPU 能力探测
+- `DONE` 运行等级系统
+- `DONE` 页面可见性控制
+- `DONE` 多标签页主实例选举（简化版）
+- `DONE` 生命周期暂停恢复
 
 ### Phase 9：Live2D 渲染层
 
-- `TODO` 渲染输入协议
-- `TODO` 资源加载
-- `TODO` 动作与表情映射
-- `TODO` fallback 与降级态
+- `DONE` 渲染输入协议
+- `IN_PROGRESS` 资源加载（当前以真实路径 + poster 回退为主）
+- `DONE` 动作与表情映射
+- `DONE` fallback 与降级态
 
 ### Phase 10：Web Components
 
-- `TODO` 建立 `packages/web-components`
-- `TODO` 只公开 `<brain-vat-world>`
-- `TODO` 支持传入 `engine instance`
-- `TODO` 支持传入 `initConfig`
-- `TODO` 建立命令派发桥和 ViewModel 渲染桥
+- `DONE` 建立 `packages/web-components`
+- `DONE` 只公开 `<brain-vat-world>`
+- `DONE` 支持传入 `engine instance`
+- `DONE` 支持传入 `initConfig`
+- `DONE` 建立命令派发桥和 ViewModel 渲染桥
 
 ### Phase 11：Standalone 官方壳
 
-- `TODO` 建立 `apps/standalone`
-- `TODO` 接入官方世界
-- `TODO` 接入调试入口
-- `TODO` 接入导入导出
-- `TODO` 接入错误态和降级态
+- `DONE` 建立 `apps/standalone`
+- `DONE` 接入官方世界
+- `DONE` 接入调试入口（基础版）
+- `DONE` 接入导入导出
+- `DONE` 接入错误态和降级态
 
 ### Phase 12：调试与观测
 
 - `TODO` 事件流面板
-- `TODO` 角色状态摘要
-- `TODO` 关系变化日志
+- `DONE` 角色状态摘要
+- `DONE` 关系变化日志（摘要版）
 - `TODO` 记忆写入日志
-- `TODO` 资源与 provider 状态面板
+- `DONE` 资源与 provider 状态面板
 
 ### Phase 13：测试体系
 
-- `TODO` schema fixture tests
-- `TODO` pack loader tests
-- `TODO` command / event contract tests
-- `TODO` memory / relationship tests
+- `DONE` schema fixture tests
+- `DONE` pack loader tests
+- `DONE` command / event contract tests（基础版）
+- `DONE` memory / relationship tests（基础版）
 - `TODO` web component smoke tests
 
 ### Phase 14：发布准备
@@ -202,3 +216,10 @@
   - 统一 README、文档索引和项目总纲的文案语言，改为中文表述为主
   - 建立架构、领域模型、Pack 规范、引擎 API、运行时、渲染/UI、数据、质量、路线图和 ADR 文档
   - 补充编码约定、Phase 0/1 检查清单、Pack 与协议示例，并接入索引与协作规则
+  - 建立 monorepo 工程骨架、核心 package、官方世界包、三角色包和三消息源包
+  - 实现 `config-schema`、`engine-core`、`browser-runtime`、三个 Provider、`renderer-live2d`、`web-components` 与 `apps/standalone`
+  - 打通用户输入、角色回复、记忆写入、关系更新、状态导入导出和基础资源状态展示
+  - 完成 `typecheck`、`test`、`build` 和页面可运行验证
+  - 将官方演示角色锁定为 `Niziiro Mao`、`Hiyori Momose`、`Jin Natori`
+  - 收口浏览器演示模式下的消息源跨域噪音，改为优先使用本地回退快照
+  - 新增 Standalone favicon，并同步调整首页、总纲、执行状态与示例文件

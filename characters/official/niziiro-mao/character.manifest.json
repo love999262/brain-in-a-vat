@@ -1,0 +1,31 @@
+{
+  "id": "official/niziiro-mao",
+  "kind": "character",
+  "name": "Niziiro Mao",
+  "title": "表情驱动的舞台角色",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "tags": ["official", "sample", "live2d"],
+  "files": {
+    "persona": "persona.json",
+    "memoryProfile": "memory-profile.json",
+    "renderManifest": "render.manifest.json",
+    "sourceAffinity": "source-affinity.json",
+    "relationshipProfile": "relationship-profile.json"
+  },
+  "capabilities": {
+    "chat": true,
+    "live2d": true,
+    "groupConversation": true
+  },
+  "defaults": {
+    "initialMood": "bright",
+    "initialEnergy": 0.82,
+    "visibleAtBootstrap": true
+  }
+}
+

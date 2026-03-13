@@ -13,6 +13,8 @@
 - `protocols/`
   - 初始化协议、Command、Event、ViewModel 示例
 
+当前示例默认跟随官方演示世界，角色与世界实例名称使用 `Niziiro Mao`、`Hiyori Momose`、`Jin Natori` 这一组演示配置。
+
 ## 使用方式
 
 - 阅读 Pack 规范时，可对照这里的 JSON 示例理解字段结构

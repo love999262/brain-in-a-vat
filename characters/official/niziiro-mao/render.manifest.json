@@ -1,0 +1,33 @@
+{
+  "type": "live2d",
+  "model": {
+    "entry": "assets/model.model3.json",
+    "version": "sample"
+  },
+  "layout": {
+    "scale": 1,
+    "offsetX": 0,
+    "offsetY": 0
+  },
+  "textures": [],
+  "motions": [
+    { "id": "idle", "file": "assets/motions/idle.motion3.json", "group": "idle" },
+    { "id": "wave", "file": "assets/motions/wave.motion3.json", "group": "tap" }
+  ],
+  "expressions": [
+    { "id": "happy", "file": "assets/expressions/happy.exp3.json" },
+    { "id": "spark", "file": "assets/expressions/spark.exp3.json" }
+  ],
+  "emotionMap": {
+    "bright": { "motionId": "wave", "expressionId": "happy" },
+    "playful": { "motionId": "wave", "expressionId": "spark" },
+    "calm": { "motionId": "idle", "expressionId": "happy" }
+  },
+  "fallback": {
+    "poster": "assets/poster.svg"
+  },
+  "constraints": {
+    "preferredQuality": "high"
+  }
+}
+

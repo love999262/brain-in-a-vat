@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": "../../",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "paths": {
+      "@brain-vat/shared": ["packages/shared/src/index.ts"],
+      "@brain-vat/config-schema": ["packages/config-schema/src/index.ts"],
+      "@brain-vat/engine-core": ["packages/engine-core/src/index.ts"],
+      "@brain-vat/browser-runtime": ["packages/browser-runtime/src/index.ts"],
+      "@brain-vat/provider-webllm": ["packages/provider-webllm/src/index.ts"],
+      "@brain-vat/provider-indexeddb": ["packages/provider-indexeddb/src/index.ts"],
+      "@brain-vat/provider-rss": ["packages/provider-rss/src/index.ts"],
+      "@brain-vat/renderer-live2d": ["packages/renderer-live2d/src/index.ts"],
+      "@brain-vat/web-components": ["packages/web-components/src/index.ts"]
+    }
+  }
+}

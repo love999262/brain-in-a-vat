@@ -1,7 +1,7 @@
 [
   {
-    "instanceId": "char-22",
-    "characterPackId": "official/22",
+    "instanceId": "char-mao",
+    "characterPackId": "official/niziiro-mao",
     "enabled": true,
     "visibleAtStart": true,
     "focusPriority": 0.9,
@@ -10,15 +10,15 @@
       "energy": 0.82
     },
     "contextOverlay": {
-      "worldRole": "娱乐扰动源"
+      "worldRole": "舞台型扰动源"
     },
     "tags": [
       "entertainment"
     ]
   },
   {
-    "instanceId": "char-33",
-    "characterPackId": "official/33",
+    "instanceId": "char-hiyori",
+    "characterPackId": "official/hiyori-momose",
     "enabled": true,
     "visibleAtStart": true,
     "focusPriority": 0.8,
@@ -27,15 +27,15 @@
       "energy": 0.63
     },
     "contextOverlay": {
-      "worldRole": "理性分析者"
+      "worldRole": "场景稳定器"
     },
     "tags": [
       "analysis"
     ]
   },
   {
-    "instanceId": "char-third",
-    "characterPackId": "official/third",
+    "instanceId": "char-jin",
+    "characterPackId": "official/jin-natori",
     "enabled": true,
     "visibleAtStart": false,
     "focusPriority": 0.4,
@@ -44,7 +44,7 @@
       "energy": 0.55
     },
     "contextOverlay": {
-      "worldRole": "第三方扰动角色"
+      "worldRole": "结构化观察者"
     },
     "tags": [
       "wildcard"

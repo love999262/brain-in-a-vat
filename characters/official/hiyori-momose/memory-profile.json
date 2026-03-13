@@ -1,0 +1,26 @@
+{
+  "retentionBias": {
+    "selfRelevance": 0.6,
+    "userRelevance": 0.74,
+    "emotionalIntensity": 0.58,
+    "novelty": 0.62,
+    "repetition": 0.56,
+    "sourceCredibility": 0.68
+  },
+  "sharingPreference": "balanced",
+  "summaryStyle": "compact",
+  "forgetBias": {
+    "stale": 0.48,
+    "lowCredibility": 0.74,
+    "lowRelevance": 0.58,
+    "duplicate": 0.66
+  },
+  "sensitivity": {
+    "praise": 0.54,
+    "criticism": 0.44,
+    "conflict": 0.52,
+    "uncertainty": 0.49
+  },
+  "longTermFocusTags": ["stable-relationship", "culture", "world"]
+}
+

@@ -1,17 +1,18 @@
 {
   "id": "default",
   "visibleCharacters": [
-    "char-22",
-    "char-33"
+    "char-mao",
+    "char-hiyori"
   ],
-  "defaultFocus": "char-22",
+  "defaultFocus": "char-mao",
   "channels": [
     {
       "id": "main-group",
       "kind": "group",
       "participants": [
-        "char-22",
-        "char-33"
+        "char-mao",
+        "char-hiyori",
+        "char-jin"
       ],
       "default": true
     },

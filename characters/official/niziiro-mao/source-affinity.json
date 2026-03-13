@@ -1,0 +1,20 @@
+{
+  "preferredSourceIds": ["official/entertainment-feed", "official/world-briefing"],
+  "blockedSourceIds": [],
+  "preferredTags": {
+    "movie": 0.92,
+    "game": 0.88,
+    "culture": 0.76
+  },
+  "blockedTags": ["macroeconomy"],
+  "categoryWeights": {
+    "entertainment": 0.96,
+    "general": 0.52,
+    "history-tech": 0.3
+  },
+  "credibilitySensitivity": 0.42,
+  "noveltyPreference": 0.86,
+  "engagementStyle": "curious",
+  "conflictTriggers": ["technology-policy"]
+}
+

@@ -1,0 +1,11 @@
+{
+  "titleFields": ["title"],
+  "summaryFields": ["summary", "description"],
+  "contentFields": ["content", "content_html"],
+  "publishedAtFields": ["published", "pubDate", "date_published"],
+  "authorFields": ["author", "dc:creator"],
+  "tagFields": ["tags", "category"],
+  "preferHtml": false,
+  "extractPlainText": true
+}
+

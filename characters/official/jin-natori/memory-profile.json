@@ -1,0 +1,26 @@
+{
+  "retentionBias": {
+    "selfRelevance": 0.54,
+    "userRelevance": 0.63,
+    "emotionalIntensity": 0.36,
+    "novelty": 0.7,
+    "repetition": 0.61,
+    "sourceCredibility": 0.84
+  },
+  "sharingPreference": "private-first",
+  "summaryStyle": "analytic",
+  "forgetBias": {
+    "stale": 0.42,
+    "lowCredibility": 0.88,
+    "lowRelevance": 0.52,
+    "duplicate": 0.72
+  },
+  "sensitivity": {
+    "praise": 0.24,
+    "criticism": 0.56,
+    "conflict": 0.62,
+    "uncertainty": 0.68
+  },
+  "longTermFocusTags": ["history", "technology", "policy"]
+}
+

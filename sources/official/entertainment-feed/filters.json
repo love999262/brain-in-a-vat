@@ -1,0 +1,15 @@
+{
+  "includeTags": [],
+  "excludeTags": ["adult"],
+  "includeKeywords": [],
+  "excludeKeywords": [],
+  "authorAllowlist": [],
+  "authorBlocklist": [],
+  "domainAllowlist": [],
+  "domainBlocklist": [],
+  "minContentLength": 0,
+  "safeContentProfile": "standard",
+  "stripTrackingLinks": true,
+  "dedupeHints": ["title"]
+}
+
