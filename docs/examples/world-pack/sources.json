@@ -1,0 +1,48 @@
+[
+  {
+    "bindingId": "src-entertainment",
+    "sourcePackId": "official/entertainment-feed",
+    "enabled": true,
+    "deliverTo": [
+      "char-22"
+    ],
+    "sharedChannels": [
+      "world/ambient"
+    ],
+    "priorityMode": "boosted",
+    "characterOverrides": {
+      "char-33": {
+        "priorityBoost": -0.1
+      }
+    }
+  },
+  {
+    "bindingId": "src-history-tech",
+    "sourcePackId": "official/history-tech-feed",
+    "enabled": true,
+    "deliverTo": [
+      "char-33"
+    ],
+    "sharedChannels": [
+      "world/ambient"
+    ],
+    "priorityMode": "normal",
+    "characterOverrides": {
+      "char-22": {
+        "blocked": false,
+        "priorityBoost": -0.2
+      }
+    }
+  },
+  {
+    "bindingId": "src-general",
+    "sourcePackId": "official/general-feed",
+    "enabled": true,
+    "deliverTo": [],
+    "sharedChannels": [
+      "world/ambient"
+    ],
+    "priorityMode": "background",
+    "characterOverrides": {}
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "retentionBias": {
+    "selfRelevance": 0.83,
+    "userRelevance": 0.71,
+    "emotionalIntensity": 0.9,
+    "novelty": 0.86,
+    "repetition": 0.48,
+    "sourceCredibility": 0.42
+  },
+  "sharingPreference": "balanced",
+  "summaryStyle": "narrative",
+  "forgetBias": {
+    "stale": 0.71,
+    "lowCredibility": 0.39,
+    "lowRelevance": 0.76,
+    "duplicate": 0.82
+  },
+  "sensitivity": {
+    "praise": 0.74,
+    "criticism": 0.56,
+    "conflict": 0.47,
+    "uncertainty": 0.35
+  },
+  "longTermFocusTags": [
+    "movie",
+    "game",
+    "friendship"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "includeTags": [],
+  "excludeTags": [
+    "spam"
+  ],
+  "includeKeywords": [],
+  "excludeKeywords": [
+    "营销",
+    "广告"
+  ],
+  "authorAllowlist": [],
+  "authorBlocklist": [],
+  "domainAllowlist": [],
+  "domainBlocklist": [],
+  "minContentLength": 80,
+  "safeContentProfile": "standard",
+  "stripTrackingLinks": true,
+  "dedupeHints": [
+    "title",
+    "link"
+  ]
+}

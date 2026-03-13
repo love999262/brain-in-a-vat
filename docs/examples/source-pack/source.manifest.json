@@ -1,0 +1,30 @@
+{
+  "id": "official/history-tech-feed",
+  "kind": "source",
+  "name": "历史科技资讯源",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "sourceType": "rss",
+  "endpoints": [
+    {
+      "url": "https://example.com/feed.xml",
+      "format": "rss",
+      "priority": 1
+    }
+  ],
+  "access": {
+    "mode": "browser-direct"
+  },
+  "contentClass": "slowburn",
+  "category": "history-tech",
+  "language": "zh-CN",
+  "credibility": 0.83,
+  "tags": [
+    "history",
+    "technology"
+  ]
+}

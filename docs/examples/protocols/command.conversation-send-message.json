@@ -1,0 +1,16 @@
+{
+  "type": "conversation.sendMessage",
+  "requestId": "req_0001",
+  "payload": {
+    "channelId": "main-group",
+    "targetCharacterIds": [
+      "char-22",
+      "char-33"
+    ],
+    "message": "你们两个今天分别想聊什么？"
+  },
+  "meta": {
+    "source": "ui",
+    "surface": "standalone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "layoutHint": "stage-split",
+  "defaultPanels": [
+    "conversation",
+    "relationships",
+    "resources"
+  ],
+  "themeHint": "official-demo",
+  "heroCharacter": "char-22"
+}

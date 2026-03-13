@@ -1,0 +1,51 @@
+{
+  "type": "live2d",
+  "model": {
+    "entry": "assets/model/22.model3.json",
+    "version": "1.0"
+  },
+  "layout": {
+    "scale": 1.0,
+    "offsetX": 0,
+    "offsetY": 0
+  },
+  "textures": [],
+  "motions": [
+    {
+      "id": "idle",
+      "file": "assets/motions/idle.motion3.json",
+      "group": "idle"
+    },
+    {
+      "id": "talk",
+      "file": "assets/motions/talk.motion3.json",
+      "group": "talk"
+    }
+  ],
+  "expressions": [
+    {
+      "id": "happy",
+      "file": "assets/expressions/happy.exp3.json"
+    },
+    {
+      "id": "surprised",
+      "file": "assets/expressions/surprised.exp3.json"
+    }
+  ],
+  "emotionMap": {
+    "bright": {
+      "motionId": "idle",
+      "expressionId": "happy"
+    },
+    "curious": {
+      "motionId": "talk",
+      "expressionId": "surprised"
+    }
+  },
+  "fallback": {
+    "poster": "assets/poster.png"
+  },
+  "constraints": {
+    "preferredQuality": "medium"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "audienceTags": [
+    "history",
+    "technology",
+    "analysis"
+  ],
+  "deliveryMode": "targeted",
+  "priorityBoosts": {
+    "history": 0.3,
+    "technology": 0.25
+  },
+  "topicHints": [
+    "history",
+    "science",
+    "policy"
+  ],
+  "defaultChannels": [
+    "world/ambient"
+  ]
+}

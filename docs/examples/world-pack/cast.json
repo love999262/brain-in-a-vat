@@ -1,0 +1,53 @@
+[
+  {
+    "instanceId": "char-22",
+    "characterPackId": "official/22",
+    "enabled": true,
+    "visibleAtStart": true,
+    "focusPriority": 0.9,
+    "initialState": {
+      "mood": "bright",
+      "energy": 0.82
+    },
+    "contextOverlay": {
+      "worldRole": "娱乐扰动源"
+    },
+    "tags": [
+      "entertainment"
+    ]
+  },
+  {
+    "instanceId": "char-33",
+    "characterPackId": "official/33",
+    "enabled": true,
+    "visibleAtStart": true,
+    "focusPriority": 0.8,
+    "initialState": {
+      "mood": "calm",
+      "energy": 0.63
+    },
+    "contextOverlay": {
+      "worldRole": "理性分析者"
+    },
+    "tags": [
+      "analysis"
+    ]
+  },
+  {
+    "instanceId": "char-third",
+    "characterPackId": "official/third",
+    "enabled": true,
+    "visibleAtStart": false,
+    "focusPriority": 0.4,
+    "initialState": {
+      "mood": "curious",
+      "energy": 0.55
+    },
+    "contextOverlay": {
+      "worldRole": "第三方扰动角色"
+    },
+    "tags": [
+      "wildcard"
+    ]
+  }
+]

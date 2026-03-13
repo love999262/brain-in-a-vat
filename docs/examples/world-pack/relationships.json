@@ -1,0 +1,28 @@
+[
+  {
+    "from": "char-22",
+    "to": "char-33",
+    "dimensions": {
+      "familiarity": 0.78,
+      "trust": 0.62,
+      "warmth": 0.84,
+      "tension": 0.31,
+      "curiosity": 0.73,
+      "influence": 0.58
+    },
+    "notes": "关系亲近但经常出现表达层面的分歧"
+  },
+  {
+    "from": "char-33",
+    "to": "char-22",
+    "dimensions": {
+      "familiarity": 0.79,
+      "trust": 0.59,
+      "warmth": 0.63,
+      "tension": 0.37,
+      "curiosity": 0.71,
+      "influence": 0.42
+    },
+    "notes": "会吐槽，但并不排斥对方"
+  }
+]

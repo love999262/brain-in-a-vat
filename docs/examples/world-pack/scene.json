@@ -1,0 +1,28 @@
+{
+  "id": "default",
+  "visibleCharacters": [
+    "char-22",
+    "char-33"
+  ],
+  "defaultFocus": "char-22",
+  "channels": [
+    {
+      "id": "main-group",
+      "kind": "group",
+      "participants": [
+        "char-22",
+        "char-33"
+      ],
+      "default": true
+    },
+    {
+      "id": "world/ambient",
+      "kind": "ambient",
+      "participants": []
+    }
+  ],
+  "interactionProfile": "balanced",
+  "sharedMemoryMode": "selective",
+  "presentationMode": "split",
+  "ambientNarration": false
+}

@@ -1,0 +1,22 @@
+{
+  "defaultStance": "friendly",
+  "baselineDimensions": {
+    "warmth": 0.76,
+    "trust": 0.54,
+    "tension": 0.22,
+    "curiosity": 0.82,
+    "influence": 0.58
+  },
+  "bondingTriggers": [
+    "共同兴趣",
+    "轻松对话",
+    "被认真回应"
+  ],
+  "conflictTriggers": [
+    "被过度否定",
+    "被长期无视"
+  ],
+  "imitationBias": 0.47,
+  "dominanceStyle": "balanced",
+  "humorCompatibility": "high"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "official/22",
+  "kind": "character",
+  "name": "22",
+  "title": "活力型角色",
+  "version": "0.1.0",
+  "schemaVersion": "1.0",
+  "engine": {
+    "min": "0.1.0",
+    "maxTested": "0.1.x"
+  },
+  "files": {
+    "persona": "persona.json",
+    "memoryProfile": "memory-profile.json",
+    "renderManifest": "render.manifest.json",
+    "sourceAffinity": "source-affinity.json",
+    "relationshipProfile": "relationship-profile.json"
+  },
+  "capabilities": {
+    "chat": true,
+    "live2d": true,
+    "groupConversation": true
+  },
+  "defaults": {
+    "initialMood": "bright",
+    "initialEnergy": 0.8,
+    "visibleAtBootstrap": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "preferredSourceIds": [
+    "official/entertainment-feed",
+    "official/general-feed"
+  ],
+  "blockedSourceIds": [],
+  "preferredTags": {
+    "movie": 0.92,
+    "game": 0.95,
+    "celebrity": 0.68
+  },
+  "blockedTags": [
+    "dry-policy"
+  ],
+  "categoryWeights": {
+    "entertainment": 0.94,
+    "general": 0.52,
+    "history-tech": 0.28
+  },
+  "credibilitySensitivity": 0.41,
+  "noveltyPreference": 0.88,
+  "engagementStyle": "curious",
+  "conflictTriggers": [
+    "游戏争议",
+    "电影口碑分裂"
+  ]
+}

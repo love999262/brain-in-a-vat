@@ -1,0 +1,33 @@
+{
+  "apiVersion": "1.0",
+  "world": {
+    "type": "pack-ref",
+    "id": "official/demo-world"
+  },
+  "assets": {
+    "baseUrl": "/packs"
+  },
+  "providers": {
+    "model": {
+      "type": "webllm",
+      "preset": "auto-qwen"
+    },
+    "storage": {
+      "type": "indexeddb"
+    },
+    "source": {
+      "type": "browser-feed"
+    }
+  },
+  "persistence": {
+    "namespace": "official-demo",
+    "restorePreviousState": true
+  },
+  "runtime": {
+    "surface": "standalone",
+    "autoStart": true,
+    "debug": true,
+    "performancePreset": "balanced",
+    "deviceProfileHint": "auto"
+  }
+}

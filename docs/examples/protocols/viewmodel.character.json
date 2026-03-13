@@ -1,0 +1,18 @@
+{
+  "id": "char-22",
+  "name": "22",
+  "visible": true,
+  "active": true,
+  "speaking": false,
+  "focused": true,
+  "mood": "bright",
+  "energy": 0.81,
+  "currentTopic": "电影",
+  "affinitySummary": "最近更偏向娱乐与轻松话题",
+  "live2d": {
+    "modelId": "official/22",
+    "expression": "happy",
+    "motion": "idle",
+    "status": "ready"
+  }
+}
