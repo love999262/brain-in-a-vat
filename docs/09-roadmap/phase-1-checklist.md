@@ -24,30 +24,30 @@
 
 ### schema
 
-- [ ] 定义通用 manifest schema
-- [ ] 定义 Character Pack schema
-- [ ] 定义 Source Pack schema
-- [ ] 定义 World Pack schema
-- [ ] 定义 schema 版本约束
+- [x] 定义通用 manifest schema
+- [x] 定义 Character Pack schema
+- [x] 定义 Source Pack schema
+- [x] 定义 World Pack schema
+- [x] 定义 schema 版本约束
 
 ### 错误与校验
 
-- [ ] 定义结构化错误码
-- [ ] 实现字段缺失校验
-- [ ] 实现引用关系校验
+- [x] 定义结构化错误码
+- [x] 实现字段缺失校验
+- [x] 实现引用关系校验
 - [ ] 实现路径存在性校验
 
 ### 加载器
 
-- [ ] 实现 Pack 根路径解析
-- [ ] 实现 manifest 解析
-- [ ] 实现 World 组装前的预校验
+- [x] 实现 Pack 根路径解析
+- [x] 实现 manifest 解析
+- [x] 实现 World 组装前的预校验
 
 ### 样例内容
 
-- [ ] 建立官方 world 目录骨架
-- [ ] 建立三个官方 character 目录骨架
-- [ ] 建立三个官方 source 目录骨架
+- [x] 建立官方 world 目录骨架
+- [x] 建立三个官方 character 目录骨架
+- [x] 建立三个官方 source 目录骨架
 
 ## 验收标准
 

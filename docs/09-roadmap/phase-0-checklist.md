@@ -24,39 +24,39 @@
 
 ### 目录与 workspace
 
-- [ ] 建立 `apps`
-- [ ] 建立 `packages`
-- [ ] 建立 `worlds`
-- [ ] 建立 `characters`
-- [ ] 建立 `sources`
-- [ ] 建立 `tooling`
-- [ ] 建立 `pnpm-workspace.yaml`
+- [x] 建立 `apps`
+- [x] 建立 `packages`
+- [x] 建立 `worlds`
+- [x] 建立 `characters`
+- [x] 建立 `sources`
+- [x] 建立 `tooling`
+- [x] 建立 `pnpm-workspace.yaml`
 
 ### 根配置
 
-- [ ] 建立根 `package.json`
-- [ ] 建立统一脚本：`lint`、`typecheck`、`test`、`build`
-- [ ] 固定 Node 版本要求
+- [x] 建立根 `package.json`
+- [x] 建立统一脚本：`lint`、`typecheck`、`test`、`build`
+- [x] 固定 Node 版本要求
 
 ### 共享工具链
 
-- [ ] 建立 TypeScript 基础配置
-- [ ] 建立 lint 基础配置
+- [x] 建立 TypeScript 基础配置
+- [x] 建立 lint 基础配置
 - [ ] 建立格式化基础配置
-- [ ] 建立测试基础配置
+- [x] 建立测试基础配置
 
 ### 空包骨架
 
-- [ ] 建立 `packages/engine-core`
-- [ ] 建立 `packages/browser-runtime`
-- [ ] 建立 `packages/config-schema`
-- [ ] 建立 `packages/provider-webllm`
-- [ ] 建立 `packages/provider-indexeddb`
-- [ ] 建立 `packages/provider-rss`
-- [ ] 建立 `packages/renderer-live2d`
-- [ ] 建立 `packages/web-components`
-- [ ] 建立 `packages/shared`
-- [ ] 建立 `apps/standalone`
+- [x] 建立 `packages/engine-core`
+- [x] 建立 `packages/browser-runtime`
+- [x] 建立 `packages/config-schema`
+- [x] 建立 `packages/provider-webllm`
+- [x] 建立 `packages/provider-indexeddb`
+- [x] 建立 `packages/provider-rss`
+- [x] 建立 `packages/renderer-live2d`
+- [x] 建立 `packages/web-components`
+- [x] 建立 `packages/shared`
+- [x] 建立 `apps/standalone`
 
 ## 验收标准
 

@@ -4,11 +4,11 @@
 
 缓存策略用于减少 Live2D 资源、模型资源和消息源重复加载带来的成本。
 
-## 缓存分层
+## 目标缓存分层
 
 ### 静态资源缓存
 
-使用 `Service Worker + Cache Storage`，缓存：
+规划中使用 `Service Worker + Cache Storage`，缓存：
 
 - 应用静态资源
 - Live2D 资源
@@ -21,6 +21,13 @@
 ### 结构化状态缓存
 
 由 `IndexedDB` 承担，用于状态恢复和世界真相持久化。
+
+## 当前实现状态
+
+- `DONE` 使用 `IndexedDB` 持久化世界状态、记忆、关系和对话快照
+- `DONE` 使用构建产物中的静态资源目录承载 Pack 内容
+- `TODO` 引入 `Service Worker + Cache Storage`
+- `TODO` 引入大文件缓存层
 
 ## TTL 分类
 

@@ -114,7 +114,6 @@
       /history-tech-feed
       /world-briefing
   /docs
-  /scripts
   /tooling
 ```
 
@@ -126,7 +125,19 @@
 
 ### `packages/browser-runtime`
 
-浏览器执行层：能力探测、Worker 协调、Service Worker 协调、多标签页主实例选举和运行等级划分。
+浏览器执行层：能力探测、页面可见性、多标签页主实例选举和运行等级划分。
+
+当前已落地：
+
+- WebGPU 能力探测
+- 页面可见性处理
+- 多标签页主实例选举
+- 基础运行等级输出
+
+当前仍为后续扩展位：
+
+- Worker 深度编排
+- Service Worker 协调
 
 ### `packages/config-schema`
 
@@ -556,9 +567,9 @@ V1 固定六个维度：
 
 关系变化由以下因素共同驱动：
 
-- user input
-- source content
-- character interaction
+- 用户输入
+- 消息源内容
+- 角色互动
 - 场景上下文
 
 ## 信息消费管线
@@ -581,7 +592,7 @@ V1 固定六个维度：
 
 ## 缓存与持久化
 
-默认分层如下：
+目标分层如下：
 
 - `Service Worker + Cache Storage`
   - 静态资源、Live2D 资源、消息源原始响应
@@ -592,16 +603,18 @@ V1 固定六个维度：
 
 缓存策略、恢复规则和底层 TTL 由引擎负责，不向普通用户开放。
 
+当前 V1 实现中，已经落地的是 `IndexedDB` 持久化与浏览器默认静态资源缓存；`Service Worker + Cache Storage` 和大文件缓存层仍属于下一轮补强项。
+
 ## 浏览器运行时
 
 `browser-runtime` 负责：
 
 - WebGPU 能力探测
 - 页面可见性与生命周期处理
-- Worker 协调
-- Service Worker 协调
 - 多标签页主实例选举
 - 能力等级上报
+
+当前已落地的是能力探测、页面可见性、多标签页主实例选举和能力等级输出；Worker 协调与 Service Worker 协调仍属于预留能力。
 
 它解决运行环境约束，不负责世界行为。
 
@@ -624,8 +637,8 @@ V1 固定六个维度：
 需要预留的扩展点：
 
 - `deviceProfileHint`
-- capability profile reporting
-- resource degradation state
+- 能力画像上报
+- 资源降级状态
 - 布局模式扩展
 
 V1 只要求架构上不把后续移动端支持的路堵死。

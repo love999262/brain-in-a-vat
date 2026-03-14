@@ -27,10 +27,14 @@
 负责：
 
 - WebGPU 能力探测
-- Worker 编排
-- Service Worker 协调
 - 页面可见性与暂停恢复
 - 多标签页主实例机制
+- 运行等级输出
+
+后续扩展位：
+
+- Worker 编排
+- Service Worker 协调
 
 不负责：
 
